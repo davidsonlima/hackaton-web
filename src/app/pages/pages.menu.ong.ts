@@ -8,5 +8,5 @@ export const ONG_MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Lista de Restaurantes',
     link: '/pages/restaurant-list',
-  },
+  }
 ];
