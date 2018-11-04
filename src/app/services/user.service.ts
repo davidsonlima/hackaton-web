@@ -9,18 +9,18 @@ import { UserType } from '../model/enumeration/user-type';
 export class UserService {
 
   constructor(private http : HttpClient) {
-    var user = new User();
-    user.fillFromJSON({
-      name: "Rest Foo",
-      userType: UserType.RESTAURANT,
-    });
-    this.saveLoggedUser(user);
+    // var user = new User();
+    // user.fillFromJSON({
+    //   name: "Ong Foo",
+    //   userType: UserType.ONG,
+    // });
+    // this.saveLoggedUser(user);
   }
 
   private readonly user_table = 'tab_user';
 
   public getLoggedUser() : User {
-    var parsed = JSON.parse(localStorage.getItem(this.user_table));
+    var parsed = JSON.parse(window.localStorage.getItem(this.user_table));
     if(parsed) {
       var user = new User();
       user.fillFromJSON(parsed);
@@ -29,7 +29,7 @@ export class UserService {
     return null;
   }
 
-  public saveLoggedUser(user : User) {
-    localStorage.setItem(this.user_table, JSON.stringify(user));
+  public saveLoggedUser(json : any) {
+    window.localStorage.setItem(this.user_table, JSON.stringify(json));
   }
 }

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { TokenAuthenticationService } from './token-authentication.service';
 import { Router, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { UserService } from './user.service';
 
 @Injectable({
   providedIn: 'root'
@@ -8,12 +9,12 @@ import { Router, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/ro
 export class AuthGuardService {
 
   constructor(private router : Router,
-    private tokenAuthenticationService : TokenAuthenticationService) {
+    private userService : UserService) {
 
   }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-    const isLoggedIn = !this.tokenAuthenticationService.getStoredToken();
+    const isLoggedIn = this.userService.getLoggedUser();
     if (isLoggedIn) {
       return true;
     } else {
