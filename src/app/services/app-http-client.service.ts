@@ -28,7 +28,11 @@ export class AppHttpClientService {
   }
   
   public get(url : string, callback : any) {
-    this.http.get(this.buildUrl(url)).subscribe(x => {
+    this.http.get(this.buildUrl(url), {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    }).subscribe(x => {
       console.log("Resposta get: ");
       console.log(x);
       typeof callback === "function" && callback(x);

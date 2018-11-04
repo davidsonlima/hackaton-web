@@ -12,4 +12,10 @@ export class RestaurantListComponent implements OnInit {
   ngOnInit() {
   }
 
+  d = [false, false, false, false, false]
+
+  click(x : number) {
+    this.d[x] = true;
+  }
+
 }

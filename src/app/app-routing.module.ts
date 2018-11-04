@@ -15,6 +15,7 @@ import { LoginModule } from './pages/login/login.module';
 import { RegisterModule } from './pages/register/register.module';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { ThemeModule } from './@theme/theme.module';
 
 const routes: Routes = [
   {
@@ -59,6 +60,7 @@ const config: ExtraOptions = {
   imports: [
     LoginModule,
     RegisterModule,
+    ThemeModule,
     RouterModule.forRoot(routes, config)],
   exports: [RouterModule],
   providers: [

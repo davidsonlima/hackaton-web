@@ -3,6 +3,9 @@
   <nb-card-body>
     <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
       <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+      
+      <agm-marker *ngFor="let r of restaurants" 
+        [latitude]="r.latitude" [longitude]="r.longitude"></agm-marker>
     </agm-map>
   </nb-card-body>
 </nb-card>
