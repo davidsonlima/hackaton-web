@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'ngx-login',
@@ -7,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  @ViewChild('loginForm') loginForm : ElementRef;
+
   constructor() { }
 
+  onSubmitForm(ngForm : NgForm) {
+
+  }
+
   ngOnInit() {
+
   }
 }

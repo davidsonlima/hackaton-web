@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppHttpClientService {
 
-  readonly BASE_URL = "http://xumahub.com/";
+  readonly SERVER_URL = "localhost";
+  readonly SERVER_PORT = "8080";
 
   constructor(private http: HttpClient) { }
 
@@ -27,6 +28,6 @@ export class AppHttpClientService {
   }
 
   private buildUrl(url : string) : string {
-    return this.BASE_URL + url;
+    return this.SERVER_URL + ":" + this.SERVER_PORT + "/" + url;
   }
 }

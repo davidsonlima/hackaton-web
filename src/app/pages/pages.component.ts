@@ -23,14 +23,11 @@ export class PagesComponent {
   constructor(private userService : UserService) {  }
 
   ngOnInit(): void {
-    console.log("AAAAA")
-    var user = new User();
-    user.ongName = "ong foo";
+    var user = this.userService.getLoggedUser();
     if(user && user.isOngUser()) {
       this.menu = ONG_MENU_ITEMS
     } else {
       this.menu = RESTAURANT_MENU_ITEMS
     }
-    console.log("BBBB")
   };
 }

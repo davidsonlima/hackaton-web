@@ -1,15 +1,24 @@
+import { UserType } from "./enumeration/user-type";
+import { Serializable } from "./serializable";
+
 export class User {
-    public email : number;
-    public name : string;
-    public ongName : string;
-    public restaurantName : string;
-    public cnpj : string;
-    
-    public isOngUser() : boolean {
-        return !!this.ongName;
+    email : number;
+    name : string;
+    cnpj : string;
+    userType : UserType;
+
+    isOngUser() : boolean {
+        return this.userType === UserType.ONG;
     }
 
-    public isRestaurantUser(): boolean {
-        return !!this.restaurantName;
+    isRestaurantUser(): boolean {
+        return this.userType === UserType.RESTAURANT;
+    }
+
+    fillFromJSON(json : any) {
+        this.email = json.email;
+        this.name = json.name;
+        this.cnpj = json.cnpj;
+        this.userType = json.userType;
     }
 }
