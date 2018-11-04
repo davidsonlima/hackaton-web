@@ -17,6 +17,9 @@ import { RestaurantsMapModule } from './restaurants-map/restaurants-map.module';
 import { RestaurantListModule } from './restaurant-list/restaurant-list.module';
 import { FormsModule } from './forms/forms.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RestaurantAddFoodComponent } from './restaurant-add-food/restaurant-add-food.component';
+import { RestaurantAddFoodModule } from './restaurant-add-food/restaurant-add-food.module';
+//import { RestaurantAddFoodModule } from './restaurant-add-food/restaurant-add-food.module';
 
 const PAGES_COMPONENTS = [
   PagesComponent,
@@ -31,12 +34,14 @@ const PAGES_COMPONENTS = [
     MiscellaneousModule,
     RestaurantsMapModule,
     RestaurantListModule,
+    RestaurantAddFoodModule,
     LoginModule,
     FormsModule,
     ReactiveFormsModule,
+    //RestaurantAddFoodModule
   ],
   declarations: [
-    ...PAGES_COMPONENTS,
+    ...PAGES_COMPONENTS
   ],
 })
 export class PagesModule {

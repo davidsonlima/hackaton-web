@@ -11,8 +11,8 @@ export class UserService {
   constructor(private http : HttpClient) {
     var user = new User();
     user.fillFromJSON({
-      name: "Ong Foo",
-      userType: UserType.ONG,
+      name: "Rest Foo",
+      userType: UserType.RESTAURANT,
     });
     this.saveLoggedUser(user);
   }
