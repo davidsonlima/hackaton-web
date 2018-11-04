@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppHttpClientService {
 
-  readonly SERVER_URL = "localhost";
+  readonly SERVER_URL = "http://localhost";
   readonly SERVER_PORT = "8080";
 
   constructor(private http: HttpClient) { }

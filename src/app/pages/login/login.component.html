@@ -6,12 +6,12 @@
         <form (ngSubmit)="onSubmitLogin(loginForm)">
           <div class="input-group">
             <span class="input-group-addon success">@</span>
-            <input type="text" name="email" class="form-control" placeholder="E-mail" ngModel />
+            <input type="text" name="email" class="form-control" placeholder="E-mail" [(ngModel)]="email" />
           </div>
           <br>
           <div class="input-group">
             <span class="input-group-addon success">?</span>
-            <input type="password" name="password" placeholder="Senha" class="form-control" ngModel />
+            <input type="password" name="password" placeholder="Senha" class="form-control" [(ngModel)]="password" />
           </div>
 
           <div align="center" class="form-group accept-group col-sm-12">
