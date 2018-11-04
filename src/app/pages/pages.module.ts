@@ -19,7 +19,8 @@ import { FormsModule } from './forms/forms.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RestaurantAddFoodComponent } from './restaurant-add-food/restaurant-add-food.component';
 import { RestaurantAddFoodModule } from './restaurant-add-food/restaurant-add-food.module';
-//import { RestaurantAddFoodModule } from './restaurant-add-food/restaurant-add-food.module';
+import { OngAcceptFoodComponent } from './ong-accept-food/ong-accept-food.component';
+import { OngAcceptFoodModule } from './ong-accept-food/ong-accept-food.module';
 
 const PAGES_COMPONENTS = [
   PagesComponent,
@@ -35,13 +36,14 @@ const PAGES_COMPONENTS = [
     RestaurantsMapModule,
     RestaurantListModule,
     RestaurantAddFoodModule,
+    OngAcceptFoodModule,
     LoginModule,
     FormsModule,
     ReactiveFormsModule,
-    //RestaurantAddFoodModule
   ],
   declarations: [
-    ...PAGES_COMPONENTS
+    ...PAGES_COMPONENTS,
+    OngAcceptFoodComponent
   ],
 })
 export class PagesModule {

@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { RestaurantAddFoodComponent } from './restaurant-add-food.component';
+import { OngAcceptFoodComponent } from './ong-accept-food.component';
 
 const routes: Routes = [{
-  path: 'restaurant-add-food',
-  component: RestaurantAddFoodComponent,
+  path: 'ong-accept-food',
+  component: OngAcceptFoodComponent,
 }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class RestaurantAddFoodRoutingModule { }
+export class OngAcceptFoodRoutingModule { }
 
 export const routedComponents = [
-  RestaurantAddFoodComponent,
+  OngAcceptFoodComponent,
 ];
