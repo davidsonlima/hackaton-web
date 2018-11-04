@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RestaurantService } from '../../services/restaurant.service';
+import { Restaurant } from '../../model/restaurant';
 
 @Component({
   selector: 'app-restaurants-map',
@@ -10,11 +12,17 @@ export class RestaurantsMapComponent implements OnInit {
   public latitude: number;
   public longitude: number;
   public zoom: number;
+  public restaurants: Array<Restaurant>;
 
-  constructor() { }
+  constructor(private restaurantService : RestaurantService) { }
 
   ngOnInit() {
     var ctx = this;
+    
+    this.restaurantService.listAll((restaurantList) => {
+      this.restaurants = restaurantList;
+      console.log(this.restaurants);
+    });
 
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function (position) {
@@ -23,9 +31,6 @@ export class RestaurantsMapComponent implements OnInit {
       });
     }
     this.zoom = 12;
-    new google.maps.Geocoder().geocode({address: "Av. Engenheiro Richard"}, (res) => {
-      console.log(res);
-    })
   }
 
 }

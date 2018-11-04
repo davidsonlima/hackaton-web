@@ -23,64 +23,61 @@
                 <th style="text-align: center;"> Aceitar</th>
               </tr>
             </thead>
+
             <tbody>
                 <tr>
-                    <td class="text-nowrap" scope="row">Restaurante do Guedes</td>
+                    <td class="text-nowrap" scope="row">Bar do Juca</td>
                     <!-- <td class="text-nowrap" scope="row">mock1</td> -->
                     <td class="text-nowrap" scope="row">Arroz</td>
-                    <td class="text-nowrap" scope="row">Integral</td>
-                    <td class="text-nowrap" scope="row">3 kg</td> <!-- TODO: concatenar qtd e unidade -->
-                    <td class="text-nowrap" scope="row">04/11/2018 16:00</td>
+                    <td class="text-nowrap" scope="row">Arroz branco tipo I</td>
+                    <td class="text-nowrap" scope="row">3kg</td> <!-- TODO: concatenar qtd e unidade -->
+                    <td class="text-nowrap" scope="row">18:30</td>
                     <td class="text-nowrap" scope="row" style="text-align: center;">
-                      <button type="button" class="btn btn-success">Quero!</button>
+                      <button type="button" [disabled]="d[0]" (click)="click(0)" class="btn btn-success">Quero!</button>
                     </td>
                 </tr>
-        
                 <tr>
-                    <td class="text-nowrap" scope="row">mock2</td>
-                    <!-- <td class="text-nowrap" scope="row">mock2</td> -->
-                    <td class="text-nowrap" scope="row">mock2</td>
-                    <td class="text-nowrap" scope="row">mock2</td>
-                    <td class="text-nowrap" scope="row">mock2</td>
-                    <td class="text-nowrap" scope="row">mock2</td>
+                    <td class="text-nowrap" scope="row">Bar do Juca</td>
+                    <!-- <td class="text-nowrap" scope="row">mock1</td> -->
+                    <td class="text-nowrap" scope="row">Salada</td>
+                    <td class="text-nowrap" scope="row">Salada de verduras</td>
+                    <td class="text-nowrap" scope="row">500g</td> <!-- TODO: concatenar qtd e unidade -->
+                    <td class="text-nowrap" scope="row">18:30</td>
                     <td class="text-nowrap" scope="row" style="text-align: center;">
-                      <button type="button" class="btn btn-success">Quero!</button>
+                      <button type="button" [disabled]="d[1]" (click)="click(1)" class="btn btn-success">Quero!</button>
                     </td>
                 </tr>
-        
                 <tr>
-                    <td class="text-nowrap" scope="row">mock3</td>
-                    <!-- <td class="text-nowrap" scope="row">mock3</td> -->
-                    <td class="text-nowrap" scope="row">mock3</td>
-                    <td class="text-nowrap" scope="row">mock3</td>
-                    <td class="text-nowrap" scope="row">mock3</td>
-                    <td class="text-nowrap" scope="row">mock3</td>
+                    <td class="text-nowrap" scope="row">Restaurante Francisano</td>
+                    <!-- <td class="text-nowrap" scope="row">mock1</td> -->
+                    <td class="text-nowrap" scope="row">Filé de Frango	</td>
+                    <td class="text-nowrap" scope="row">Filé de Frango Grelhado	</td>
+                    <td class="text-nowrap" scope="row">5kg</td> <!-- TODO: concatenar qtd e unidade -->
+                    <td class="text-nowrap" scope="row">22:30</td>
                     <td class="text-nowrap" scope="row" style="text-align: center;">
-                      <button type="button" class="btn btn-success">Quero!</button>
+                      <button type="button" [disabled]="d[2]" (click)="click(2)" class="btn btn-success">Quero!</button>
                     </td>
                 </tr>
-        
                 <tr>
-                    <td class="text-nowrap" scope="row">mock4</td>
-                    <!-- <td class="text-nowrap" scope="row">mock4</td> -->
-                    <td class="text-nowrap" scope="row">mock4</td>
-                    <td class="text-nowrap" scope="row">mock4</td>
-                    <td class="text-nowrap" scope="row">mock4</td>
-                    <td class="text-nowrap" scope="row">mock4</td>
+                    <td class="text-nowrap" scope="row">Restaurante Francisano</td>
+                    <!-- <td class="text-nowrap" scope="row">mock1</td> -->
+                    <td class="text-nowrap" scope="row">Feijão</td>
+                    <td class="text-nowrap" scope="row">Feijoada</td>
+                    <td class="text-nowrap" scope="row">3kg</td> <!-- TODO: concatenar qtd e unidade -->
+                    <td class="text-nowrap" scope="row">22:30</td>
                     <td class="text-nowrap" scope="row" style="text-align: center;">
-                      <button type="button" class="btn btn-success">Quero!</button>
+                      <button type="button" [disabled]="d[3]" (click)="click(3)" class="btn btn-success">Quero!</button>
                     </td>
                 </tr>
-        
                 <tr>
-                    <td class="text-nowrap" scope="row">mock5</td>
-                    <!-- <td class="text-nowrap" scope="row">mock5</td> -->
-                    <td class="text-nowrap" scope="row">mock5</td>
-                    <td class="text-nowrap" scope="row">mock5</td>
-                    <td class="text-nowrap" scope="row">mock5</td>
-                    <td class="text-nowrap" scope="row">mock5</td>
+                    <td class="text-nowrap" scope="row">Bar do Itaúna</td>
+                    <!-- <td class="text-nowrap" scope="row">mock1</td> -->
+                    <td class="text-nowrap" scope="row">Contra-filé</td>
+                    <td class="text-nowrap" scope="row">Contra-filé na chapa</td>
+                    <td class="text-nowrap" scope="row">2kg</td> <!-- TODO: concatenar qtd e unidade -->
+                    <td class="text-nowrap" scope="row">18:50</td>
                     <td class="text-nowrap" scope="row" style="text-align: center;">
-                      <button type="button" class="btn btn-success">Quero!</button>
+                      <button type="button" [disabled]="d[4]" (click)="click(4)" class="btn btn-success">Quero!</button>
                     </td>
                 </tr>
             </tbody>
