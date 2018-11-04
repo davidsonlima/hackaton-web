@@ -10,6 +10,7 @@ import { AuthGuardService } from '../services/auth-guard.service';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 import { RestaurantAddFoodComponent } from './restaurant-add-food/restaurant-add-food.component';
 import { OngAcceptFoodComponent } from './ong-accept-food/ong-accept-food.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [{
   path: '',
@@ -27,7 +28,11 @@ const routes: Routes = [{
     }, {
       path: 'ong-accept-food',
       component: OngAcceptFoodComponent,
-    }, {
+    },{
+      path: 'about',
+      component: AboutComponent,
+    },
+    {
       path: 'dashboard',
       component: ECommerceComponent,
     }, {
