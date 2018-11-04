@@ -11,4 +11,9 @@ export const ONG_MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/restaurant-list',
     icon: 'nb-list',
   },
+  {
+    title: 'Resgatar Alimento',
+    link: '/pages/ong-accept-food',
+    icon: 'nb-star',
+  }
 ];
