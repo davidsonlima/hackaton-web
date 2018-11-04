@@ -15,5 +15,10 @@ export const ONG_MENU_ITEMS: NbMenuItem[] = [
     title: 'Resgatar Alimento',
     link: '/pages/ong-accept-food',
     icon: 'nb-star',
+  },
+  {
+    title: 'Sobre',
+    link: '/pages/about',
+    icon: 'nb-flame-circled',
   }
 ];
