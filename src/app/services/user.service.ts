@@ -7,7 +7,11 @@ import { User } from '../model/user';
 })
 export class UserService {
 
-  constructor(private http : HttpClient) { }
+  constructor(private http : HttpClient) { 
+    this.saveLoggedUser({
+      ongName: "21312",
+    } as User);
+  }
 
   private readonly user_table = 'tab_user';
 

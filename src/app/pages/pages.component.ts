@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
-import { MENU_ITEMS } from './pages-menu';
+import { ONG_MENU_ITEMS } from './pages.menu.ong';
+import { RESTAURANT_MENU_ITEMS } from './pages.menu.restaurant';
 import { UserService } from '../services/user.service';
 import { User } from '../model/user';
 import { NbMenuItem } from '@nebular/theme';
