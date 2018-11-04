@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { ONG_MENU_ITEMS } from './pages.menu.ong';
 import { RESTAURANT_MENU_ITEMS } from './pages.menu.restaurant';
+import { MENU_ITEMS } from './pages-menu';
 import { UserService } from '../services/user.service';
 import { User } from '../model/user';
 import { NbMenuItem } from '@nebular/theme';
@@ -17,17 +18,16 @@ import { NbMenuItem } from '@nebular/theme';
 })
 export class PagesComponent {
   
-  private menu : NbMenuItem[];
+  menu = MENU_ITEMS
 
+  constructor(private userService : UserService) {  }
 
-  constructor(private userService : UserService) {
-    this.userService.getLoggedUser((u) => {
-      var user = u as User;
-      if(user.isOngUser()) {
-        this.menu = ONG_MENU_ITEMS
-      } else {
-        this.menu = RESTAURANT_MENU_ITEMS
-      }
-    })
-  }
+  ngOnInit(): void {
+    var user = this.userService.getLoggedUser();
+    if(user && user.isOngUser()) {
+      this.menu = ONG_MENU_ITEMS
+    } else {
+      this.menu = RESTAURANT_MENU_ITEMS
+    }
+  };
 }

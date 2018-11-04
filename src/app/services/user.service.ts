@@ -15,8 +15,9 @@ export class UserService {
 
   private readonly user_table = 'tab_user';
 
-  public getLoggedUser(callback : any) : User {
-    return JSON.parse(localStorage.getItem(this.user_table));
+  public getLoggedUser() : User {
+    var parsed = JSON.parse(localStorage.getItem(this.user_table));
+    return parsed ? parsed as User : null;
   }
 
   public saveLoggedUser(user : User) {
