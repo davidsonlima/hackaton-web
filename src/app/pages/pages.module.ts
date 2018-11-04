@@ -8,12 +8,12 @@ import { ThemeModule } from '../@theme/theme.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { AuthRedirectComponent } from './auth-redirect/auth-redirect.component';
 import { AuthRedirectModule } from './auth-redirect/auth-redirect.module';
-import { RestaurantMapsComponent } from './restaurant-maps/restaurant-maps.component';
-import { RestaurantMapsModule } from './restaurant-maps/restaurant-maps.module';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginModule } from './login/login.module';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
+import { RestaurantsMapComponent } from './restaurants-map/restaurants-map.component';
+import { RestaurantsMapModule } from './restaurants-map/restaurants-map.module';
 
 const PAGES_COMPONENTS = [
   PagesComponent,
@@ -26,12 +26,11 @@ const PAGES_COMPONENTS = [
     DashboardModule,
     ECommerceModule,
     MiscellaneousModule,
-    RestaurantMapsModule,
+    RestaurantsMapModule,
     LoginModule,
   ],
   declarations: [
     ...PAGES_COMPONENTS,
-    RestaurantListComponent,
   ],
 })
 export class PagesModule {

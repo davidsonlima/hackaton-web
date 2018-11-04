@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { RestaurantMapsComponent } from './restaurant-maps.component';
+import { RestaurantListComponent } from '../restaurant-list/restaurant-list.component';
 
 const routes: Routes = [{
-  path: 'rdr',
-  component: RestaurantMapsComponent,
+  path: 'restaurants-map',
+  component: RestaurantListComponent,
 }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class RestaurantMapsRoutingModule { }
+export class RestaurantListRoutingModule { }
 
 export const routedComponents = [
-  RestaurantMapsComponent,
+  RestaurantListComponent,
 ];

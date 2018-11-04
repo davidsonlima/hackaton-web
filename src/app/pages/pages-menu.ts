@@ -4,6 +4,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Mapa de Restaurantes',
     link: '/pages/restaurant-maps',
+    icon: 'nb-location',
   },
   {
     title: 'Home',
