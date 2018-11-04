@@ -6,6 +6,10 @@ export const RESTAURANT_MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/restaurant-add-food',
   },
   {
+    title: 'Alimentos Disponibilizados',
+    link: '/pages/restaurant-show-food',
+  },
+  {
     title: 'Sobre',
     link: '/pages/about',
     icon: 'nb-flame-circled',

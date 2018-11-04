@@ -9,6 +9,7 @@ import { RestaurantsMapComponent } from './restaurants-map/restaurants-map.compo
 import { AuthGuardService } from '../services/auth-guard.service';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 import { RestaurantAddFoodComponent } from './restaurant-add-food/restaurant-add-food.component';
+import { RestaurantShowFoodComponent } from './restaurant-show-food/restaurant-show-food.component';
 import { OngAcceptFoodComponent } from './ong-accept-food/ong-accept-food.component';
 import { AboutComponent } from './about/about.component';
 
@@ -26,6 +27,9 @@ const routes: Routes = [{
       path: 'restaurant-add-food',
       component: RestaurantAddFoodComponent,
     }, {
+      path: 'restaurant-show-food',
+      component: RestaurantShowFoodComponent,
+    },{
       path: 'ong-accept-food',
       component: OngAcceptFoodComponent,
     },{

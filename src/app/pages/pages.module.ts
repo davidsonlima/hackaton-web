@@ -23,6 +23,8 @@ import { OngAcceptFoodComponent } from './ong-accept-food/ong-accept-food.compon
 import { OngAcceptFoodModule } from './ong-accept-food/ong-accept-food.module';
 import { AboutComponent } from './about/about.component';
 import { AboutModule } from './about/about.module';
+import { RestaurantShowFoodComponent } from './restaurant-show-food/restaurant-show-food.component';
+import { RestaurantShowFoodModule } from './restaurant-show-food/restaurant-show-food.module';
 
 const PAGES_COMPONENTS = [
   PagesComponent,
@@ -38,6 +40,7 @@ const PAGES_COMPONENTS = [
     RestaurantsMapModule,
     RestaurantListModule,
     RestaurantAddFoodModule,
+    RestaurantShowFoodModule,
     OngAcceptFoodModule,
     AboutModule,
     LoginModule,
@@ -47,7 +50,8 @@ const PAGES_COMPONENTS = [
   declarations: [
     ...PAGES_COMPONENTS,
     OngAcceptFoodComponent,
-    AboutComponent
+    AboutComponent,
+    RestaurantShowFoodComponent
   ],
 })
 export class PagesModule {
