@@ -18,7 +18,6 @@ import { LoginComponent } from './pages/login/login.component';
 const routes: Routes = [
   {
     path: 'auth',
-    component: NbAuthComponent,
     children: [
       {
         path: '',

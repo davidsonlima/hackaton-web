@@ -10,6 +10,9 @@ export class AuthService {
   }
 
   public login(username : string, password : string) : any {
-    //this.http.post(");
+    this.http.post("/auth/login", {
+      username,
+      password,
+    });
   }
 }

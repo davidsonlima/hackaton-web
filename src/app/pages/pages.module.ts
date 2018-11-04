@@ -13,6 +13,7 @@ import { RestaurantMapsModule } from './restaurant-maps/restaurant-maps.module';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginModule } from './login/login.module';
+import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 
 const PAGES_COMPONENTS = [
   PagesComponent,
@@ -30,6 +31,7 @@ const PAGES_COMPONENTS = [
   ],
   declarations: [
     ...PAGES_COMPONENTS,
+    RestaurantListComponent,
   ],
 })
 export class PagesModule {

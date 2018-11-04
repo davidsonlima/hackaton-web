@@ -10,7 +10,6 @@ import { NbAuthModule } from '@nebular/auth';
   imports: [
     CommonModule,
     LoginRoutingModule,
-    NgbModule,
     ThemeModule,
   ],
   declarations: [
