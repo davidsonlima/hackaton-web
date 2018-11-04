@@ -6,7 +6,6 @@ import { RestaurantsMapRoutingModule } from './restaurants-map-routing-module';
 @NgModule({
   imports: [
     CommonModule,
-    RestaurantsMapRoutingModule
   ],
   declarations: [
     RestaurantsMapComponent
