@@ -1,18 +1,17 @@
 import { UserType } from "./enumeration/user-type";
-import { Serializable } from "./serializable";
 
 export class User {
     email : number;
     name : string;
     cnpj : string;
-    userType : UserType;
+    userType : string;
 
     isOngUser() : boolean {
-        return this.userType === UserType.ONG;
+        return this.userType === UserType.ONG_USER;
     }
 
     isRestaurantUser(): boolean {
-        return this.userType === UserType.RESTAURANT;
+        return this.userType === UserType.RESTAURANT_USER;
     }
 
     fillFromJSON(json : any) {

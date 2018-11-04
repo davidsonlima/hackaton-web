@@ -14,7 +14,7 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.userType = UserType.ONG;
+    this.userType = UserType.ONG_USER;
   }
 
 }

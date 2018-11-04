@@ -12,7 +12,15 @@ export class AppHttpClientService {
   constructor(private http: HttpClient) { }
 
   public post(url : string, json : any, callback : any) {
-      this.http.post(this.buildUrl(url), json).subscribe(x => {
+      const headers = new Headers({
+        'Content-Type': 'application/json'
+      })
+
+      this.http.post(this.buildUrl(url), JSON.stringify(json), {
+        headers: {
+          'Content-Type': 'application/json'
+        },
+      }).subscribe(x => {
         console.log("Resposta post: ");
         console.log(x);
         typeof callback === "function" && callback(x);
