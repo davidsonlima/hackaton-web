@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { AppHttpClientService } from '../../services/app-http-client.service';
 
 @Component({
   selector: 'ngx-login',
@@ -10,10 +11,15 @@ export class LoginComponent implements OnInit {
 
   @ViewChild('loginForm') loginForm : ElementRef;
 
-  constructor() { }
+  private username : string;
+  private password : string;
 
-  onSubmitForm(ngForm : NgForm) {
+  constructor(private http : AppHttpClientService) { }
 
+  onSubmitForm() {
+    if(!this.username || !this.password) {
+      //this.http.post();
+    }
   }
 
   ngOnInit() {

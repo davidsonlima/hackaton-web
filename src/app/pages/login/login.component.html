@@ -1,39 +1,38 @@
 <div class="row">
-    <div class="col-lg-6">
-        <nb-card>
-            <nb-card-header>Login</nb-card-header>
-            <nb-card-body>
-                <div class="input-group">
-                    <span class="input-group-addon success">@</span>
-                    <input type="text" class="form-control" placeholder="E-mail"/>
-                </div>
+  <div class="col-lg-6">
+    <nb-card>
+      <nb-card-header>Login</nb-card-header>
+      <nb-card-body>
+        <form (ngSubmit)="onSubmitLogin(loginForm)">
+          <div class="input-group">
+            <span class="input-group-addon success">@</span>
+            <input type="text" name="email" class="form-control" placeholder="E-mail" ngModel />
+          </div>
+          <br>
+          <div class="input-group">
+            <span class="input-group-addon success">?</span>
+            <input type="password" name="password" placeholder="Senha" class="form-control" ngModel />
+          </div>
 
-                <br>
+          <div align="center" class="form-group accept-group col-sm-12">
+            <nb-checkbox status="success" class="col-sm-4">Lembrar-me</nb-checkbox>
+            <a class="forgot-password" routerlink="../request-password" ng-reflect-router-link="../request-password"
+              href="#/auth/request-password">Esqueceu sua senha?</a>
+          </div>
 
-                <div class="input-group">
-                    <span class="input-group-addon success">?</span>
-                    <input type="password" placeholder="Senha" class="form-control"/>
-                </div>
+          <div align="center" class="input-group col-sm-12">
+            <button type="submit" class="btn btn-success">
+              Logar
+            </button>
+          </div>
 
-                <div align="center" class="form-group accept-group col-sm-12">
-                  <nb-checkbox status="success" class="col-sm-4">Lembrar-me</nb-checkbox>
-                  <a class="forgot-password" routerlink="../request-password" ng-reflect-router-link="../request-password" href="#/auth/request-password">Esqueceu sua senha?</a>
-                </div>
-
-                <div align="center" class="input-group col-sm-12">
-                    <button type="button" class="btn btn-success">
-                        Logar
-                    </button>
-                </div>
-                
-                <div class="links" align="center">
-                  <small class="form-text"> Não tem uma conta?
-                    <a routerlink="../register" ng-reflect-router-link="../register" href="#/auth/register">
-                      <strong>Registrar</strong></a></small>
-                </div>
-
-            </nb-card-body>
-        </nb-card>
-    </div>
+          <div class="links" align="center">
+            <small class="form-text"> Não tem uma conta?
+              <a routerlink="../register" ng-reflect-router-link="../register" href="#/auth/register">
+                <strong>Registrar</strong></a></small>
+          </div>
+        </form>
+      </nb-card-body>
+    </nb-card>
+  </div>
 </div>
-      

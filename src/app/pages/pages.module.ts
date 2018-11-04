@@ -14,6 +14,9 @@ import { LoginModule } from './login/login.module';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 import { RestaurantsMapComponent } from './restaurants-map/restaurants-map.component';
 import { RestaurantsMapModule } from './restaurants-map/restaurants-map.module';
+import { RestaurantListModule } from './restaurant-list/restaurant-list.module';
+import { FormsModule } from './forms/forms.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const PAGES_COMPONENTS = [
   PagesComponent,
@@ -27,7 +30,10 @@ const PAGES_COMPONENTS = [
     ECommerceModule,
     MiscellaneousModule,
     RestaurantsMapModule,
+    RestaurantListModule,
     LoginModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   declarations: [
     ...PAGES_COMPONENTS,

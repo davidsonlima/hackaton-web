@@ -7,6 +7,7 @@ import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
 import { RestaurantsMapComponent } from './restaurants-map/restaurants-map.component';
 import { AuthGuardService } from '../services/auth-guard.service';
+import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 
 const routes: Routes = [{
   path: '',
@@ -15,6 +16,9 @@ const routes: Routes = [{
     {
       path: 'restaurants-map',
       component: RestaurantsMapComponent,
+    }, {
+      path: 'restaurant-list',
+      component: RestaurantListComponent,
     }, {
       path: 'dashboard',
       component: ECommerceComponent,
