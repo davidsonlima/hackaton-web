@@ -8,6 +8,7 @@ import { NotFoundComponent } from './miscellaneous/not-found/not-found.component
 import { RestaurantsMapComponent } from './restaurants-map/restaurants-map.component';
 import { AuthGuardService } from '../services/auth-guard.service';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
+import { RestaurantAddFoodComponent } from './restaurant-add-food/restaurant-add-food.component';
 
 const routes: Routes = [{
   path: '',
@@ -20,6 +21,9 @@ const routes: Routes = [{
       path: 'restaurant-list',
       component: RestaurantListComponent,
     }, {
+      path: 'restaurant-add-food',
+      component: RestaurantAddFoodComponent,
+    },{
       path: 'dashboard',
       component: ECommerceComponent,
     }, {
