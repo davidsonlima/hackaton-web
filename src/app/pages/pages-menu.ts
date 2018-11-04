@@ -3,7 +3,8 @@ import { NbMenuItem } from '@nebular/theme';
 export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Mapa de Restaurantes',
-    link: '/pages/restaurant-maps',
+    link: '/pages/restaurants-map',
+    icon: 'nb-location',
   },
   {
     title: 'Home',

@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { RestaurantListComponent } from './restaurant-list.component';
 
 const routes: Routes = [{
-  path: 'rdr',
+  path: 'restaurant-list',
   component: RestaurantListComponent,
 }];
 
