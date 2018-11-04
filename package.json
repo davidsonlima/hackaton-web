@@ -17,7 +17,7 @@
   "scripts": {
     "ng": "ng",
     "conventional-changelog": "conventional-changelog",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build",
     "build:prod": "npm run build -- --prod --aot",
     "test": "ng test",
@@ -34,7 +34,7 @@
     "release:changelog": "npm run conventional-changelog -- -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
-    "@agm/core": "1.0.0-beta.2",
+    "@agm/core": "^1.0.0-beta.2",
     "@angular/animations": "6.0.0",
     "@angular/common": "6.0.0",
     "@angular/compiler": "6.0.0",

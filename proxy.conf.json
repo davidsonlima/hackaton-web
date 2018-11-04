@@ -1,0 +1,6 @@
+{
+    "/v1": {
+      "target": "http://maps.googleapis.com/",
+      "secure": false
+    }
+  }

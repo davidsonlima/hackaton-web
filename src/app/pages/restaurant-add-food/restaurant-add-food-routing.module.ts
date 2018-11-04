@@ -11,7 +11,7 @@ const routes: Routes = [{
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class RestaurantListRoutingModule { }
+export class RestaurantAddFoodRoutingModule { }
 
 export const routedComponents = [
   RestaurantAddFoodComponent,
